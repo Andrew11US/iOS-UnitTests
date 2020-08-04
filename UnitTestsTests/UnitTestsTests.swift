@@ -32,3 +32,45 @@ class UnitTestsTests: XCTestCase {
     }
 
 }
+
+// Mocked class for testing
+final class MockedTracker: SessionTracking {
+    private(set) var hasActiveSession: Bool = false
+
+    func startNewSession() {
+        hasActiveSession = true
+    }
+
+    func stopCurrentSession() {
+        hasActiveSession = false
+    }
+}
+
+// Tests for Tracker class with private properties using dependency injection
+class TrackerTests: XCTestCase {
+    private var monitor: SessionMonitor!
+
+    /// It should signal the tracker upon foreground background changes.
+    func testSessionRound() {
+        let tracker = MockedTracker()
+        monitor = SessionMonitor(tracker: tracker)
+
+        XCTAssertFalse(tracker.hasActiveSession)
+
+        NotificationCenter.default.post(name: UIApplication.willEnterForegroundNotification, object: nil)
+        XCTAssertTrue(tracker.hasActiveSession)
+
+        NotificationCenter.default.post(name: UIApplication.didEnterBackgroundNotification, object: nil)
+        XCTAssertFalse(tracker.hasActiveSession)
+    }
+    
+    func testTracker() {
+        let tracker = Tracker()
+        
+        XCTAssertFalse(tracker.hasActiveSession)
+        tracker.startNewSession()
+        XCTAssertTrue(tracker.hasActiveSession)
+        tracker.stopCurrentSession()
+        XCTAssertFalse(tracker.hasActiveSession)
+    }
+}
