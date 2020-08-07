@@ -23,5 +23,7 @@ class ViewController: UIViewController {
 
     @IBAction func click2(_ sender: Any) {
         view.layer.backgroundColor = UIColor.red.cgColor
+        let axyx :Int? = nil
+        print(axyx ?? 0)
     }
 }
