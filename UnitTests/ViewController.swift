@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        lbl.isHidden = true
+    }
+    
+    @IBAction func click(_ sender: Any) {
+        lbl.isHidden = false
     }
 
 
