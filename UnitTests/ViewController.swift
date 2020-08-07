@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         lbl.isHidden = false
     }
 
-
+    @IBAction func click2(_ sender: Any) {
+        view.layer.backgroundColor = UIColor.red.cgColor
+    }
 }
 
