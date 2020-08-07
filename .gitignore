@@ -1,0 +1,35 @@
+
+Pods/Manifest.lock
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Pods.xcodeproj/xcuserdata/andrew11us.xcuserdatad/xcschemes/Pods-UnitTests-UnitTestsUITests.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/andrew11us.xcuserdatad/xcschemes/Pods-UnitTests.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/andrew11us.xcuserdatad/xcschemes/Pods-UnitTestsTests.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/andrew11us.xcuserdatad/xcschemes/SwiftLint.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/andrew11us.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/SwiftLint/LICENSE
+Pods/SwiftLint/swiftlint
+Pods/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests-acknowledgements.markdown
+Pods/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests-acknowledgements.plist
+Pods/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests-dummy.m
+Pods/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests-Info.plist
+Pods/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests-umbrella.h
+Pods/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests.debug.xcconfig
+Pods/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests.modulemap
+Pods/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests.release.xcconfig
+Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-acknowledgements.markdown
+Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-acknowledgements.plist
+Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-dummy.m
+Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-Info.plist
+Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-umbrella.h
+Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.debug.xcconfig
+Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.modulemap
+Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.release.xcconfig
+Pods/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests-acknowledgements.markdown
+Pods/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests-acknowledgements.plist
+Pods/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests-dummy.m
+Pods/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests-Info.plist
+Pods/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests-umbrella.h
+Pods/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests.debug.xcconfig
+Pods/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests.modulemap
+Pods/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests.release.xcconfig
+Pods/Target Support Files/SwiftLint/SwiftLint.xcconfig

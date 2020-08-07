@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         lbl.isHidden = true
     }
     
@@ -26,4 +25,3 @@ class ViewController: UIViewController {
         view.layer.backgroundColor = UIColor.red.cgColor
     }
 }
-
