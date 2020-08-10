@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		01602EF724D9E89A0054B409 /* UnitTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01602EF624D9E89A0054B409 /* UnitTestsUITests.swift */; };
 		01602F0724D9E8EC0054B409 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01602F0624D9E8EC0054B409 /* Tracker.swift */; };
 		01DAFFB424DF296B00D0035E /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DAFFB324DF296B00D0035E /* Algorithms.swift */; };
+		01DAFFD624E09A5C00D0035E /* Tests+Nimble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DAFFD524E09A5C00D0035E /* Tests+Nimble.swift */; };
 		B5B429C4E3AAD544918D7FC9 /* Pods_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14366B892069E431DA2994BF /* Pods_UnitTests.framework */; };
 		C39C86FAF487B8CA1C7FD7C5 /* Pods_UnitTests_UnitTestsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88595097D7890EB9AF96D36 /* Pods_UnitTests_UnitTestsUITests.framework */; };
 		DC93E1E2F58A167542B350CC /* Pods_UnitTestsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84AFD83333F38FEC6104F61 /* Pods_UnitTestsTests.framework */; };
@@ -56,6 +57,7 @@
 		01602EF824D9E89A0054B409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01602F0624D9E8EC0054B409 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		01DAFFB324DF296B00D0035E /* Algorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithms.swift; sourceTree = "<group>"; };
+		01DAFFD524E09A5C00D0035E /* Tests+Nimble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tests+Nimble.swift"; sourceTree = "<group>"; };
 		14366B892069E431DA2994BF /* Pods_UnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E7F9193F52AED41C6A8CB2 /* Pods-UnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.debug.xcconfig"; path = "Target Support Files/Pods-UnitTests/Pods-UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EDB384C14FE3BE34F795E65 /* Pods-UnitTests-UnitTestsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests-UnitTestsUITests.release.xcconfig"; path = "Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				01602EEB24D9E89A0054B409 /* UnitTestsTests.swift */,
 				01602EED24D9E89A0054B409 /* Info.plist */,
+				01DAFFD524E09A5C00D0035E /* Tests+Nimble.swift */,
 			);
 			path = UnitTestsTests;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				01602EE324D9E89A0054B409 /* Sources */,
 				01602EE424D9E89A0054B409 /* Frameworks */,
 				01602EE524D9E89A0054B409 /* Resources */,
+				DA84B4BDD7C0B769F6955563 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +227,7 @@
 				01602EEE24D9E89A0054B409 /* Sources */,
 				01602EEF24D9E89A0054B409 /* Frameworks */,
 				01602EF024D9E89A0054B409 /* Resources */,
+				84274C729D1CE41B95834FD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +349,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		84274C729D1CE41B95834FD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnitTests-UnitTestsUITests/Pods-UnitTests-UnitTestsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		872CA0F4FA0556F3D0BA0EA3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +410,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DA84B4BDD7C0B769F6955563 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnitTestsTests/Pods-UnitTestsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -407,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DAFFD624E09A5C00D0035E /* Tests+Nimble.swift in Sources */,
 				01602EEC24D9E89A0054B409 /* UnitTestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

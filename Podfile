@@ -6,14 +6,18 @@ target 'UnitTests' do
   use_frameworks!
 
   pod 'SwiftLint'
+  def testing_pods
+      pod 'Quick'
+      pod 'Nimble'
+  end
 
   target 'UnitTestsTests' do
     inherit! :search_paths
-    # Pods for testing
+    testing_pods
   end
 
   target 'UnitTestsUITests' do
-    # Pods for testing
+    testing_pods
   end
 
 end
