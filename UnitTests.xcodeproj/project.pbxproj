@@ -139,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				01602EEB24D9E89A0054B409 /* UnitTestsTests.swift */,
-				01602EED24D9E89A0054B409 /* Info.plist */,
 				01DAFFD524E09A5C00D0035E /* Tests+Nimble.swift */,
+				01602EED24D9E89A0054B409 /* Info.plist */,
 			);
 			path = UnitTestsTests;
 			sourceTree = "<group>";

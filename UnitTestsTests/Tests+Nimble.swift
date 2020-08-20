@@ -18,4 +18,20 @@ class UnitTestsSpec: QuickSpec {
             }
         }
     }
+    
+    private let tracker = MockedTracker()
+    
+    override func setUp() {
+        tracker.startNewSession()
+    }
+    
+    func trackerTesting() {
+        describe("Tracker testing") {
+            context("when launched start") {
+                it("should has active session") {
+                    expect(self.tracker.hasActiveSession).to(equal(true))
+                }
+            }
+        }
+    }
 }
